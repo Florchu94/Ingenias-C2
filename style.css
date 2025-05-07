@@ -102,6 +102,61 @@ footer {
 	width: 100%;
 }
 
+.clasicos-section {
+	padding: 2rem 1rem;
+	background-color: #ffe4ec;
+	text-align: center;
+}
+
+.clasicos-section h2 {
+	color: #79184c;
+	margin-bottom: 2rem;
+}
+
+.pelicula-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #fff;
+	border-radius: 20px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	padding: 1.5rem;
+	margin: 1rem auto;
+	max-width: 800px;
+}
+
+.pelicula-imagen {
+	width: 100%;
+	max-width: 300px;
+	border-radius: 10px;
+	margin-bottom: 1rem;
+}
+
+.pelicula-info h3 {
+	color: #79184c;
+	margin-bottom: 0.5rem;
+}
+
+.sinopsis {
+	font-style: italic;
+	margin: 1rem 0;
+}
+
+.ver-trailer {
+	background-color: #ff69b4;
+	border: none;
+	padding: 10px 20px;
+	color: white;
+	border-radius: 20px;
+	cursor: pointer;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.ver-trailer:hover {
+	background-color: #ff1493;
+}
+
 /* --------------------------------------------- */
 /* 📱 Smartphones medianos (481px a 767px)       */
 /* -------------------------------------------- */
