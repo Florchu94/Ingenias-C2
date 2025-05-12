@@ -93,9 +93,9 @@ main {
 
 #descripcion {
 	margin-bottom: 1rem;
-	font-size: 1.1rem;
+	font-size: 1.15rem;
 	line-height: 1.6;
-	margin-block: 1lh;
+	margin-block: 1.6rem;
 }
 
 footer {
@@ -106,46 +106,22 @@ footer {
 	width: 100%;
 }
 
-/*** Sección Clásicos ***/
+/*** Sección Animadas ***/
 
-.clasicos-section {
+.animadas-section {
 	padding: 2rem 1rem;
-	background-color: #fff0f5;
+	background-color: #ffbed4;
 	text-align: center;
 }
 
-.clasicos-section h2 {
+.animadas-section h2 {
 	color: #c06c84;
 	margin-bottom: 2rem;
-}
-
-.pelicula-card {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: #fff;
-	border-radius: 20px;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-	padding: 1.5rem;
-	margin: 1rem auto;
-	max-width: 800px;
-}
-
-.pelicula-imagen {
-	width: 100%;
-	max-width: 300px;
-	border-radius: 10px;
-	margin-bottom: 1rem;
 }
 
 .pelicula-info h3 {
 	color: #79184c;
 	margin-bottom: 0.5rem;
-}
-
-.sinopsis {
-	font-style: italic;
-	margin: 1rem 0;
 }
 
 .ver-trailer {
@@ -163,19 +139,6 @@ footer {
 	background-color: #ff1493;
 }
 
-/*** Sección Animadas ***/
-
-.animadas-section {
-	padding: 2rem 1rem;
-	background-color: #ffbed4;
-	text-align: center;
-}
-
-.animadas-section h2 {
-	color: #c06c84;
-	margin-bottom: 2rem;
-}
-
 /*** Sección Terror ***/
 
 .terror-section {
@@ -190,13 +153,37 @@ footer {
 	margin-bottom: 2rem;
 }
 
+.pelicula-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #fff;
+	border-radius: 20px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	padding: 1.5rem;
+	margin: 1rem auto;
+	max-width: 800px;
+}
+
 .terror-section .pelicula-card {
 	background-color: #2c2531;
 	box-shadow: 0 4px 10px rgba(255, 105, 180, 0.2);
 }
 
+.pelicula-imagen {
+	width: 100%;
+	max-width: 300px;
+	border-radius: 10px;
+	margin-bottom: 1rem;
+}
+
 .terror-section .pelicula-info h3 {
 	color: #f8d7e5;
+}
+
+.sinopsis {
+	font-style: italic;
+	margin: 1rem 0;
 }
 
 .terror-section .ver-trailer {
