@@ -72,7 +72,7 @@ header {
 .iniciar-sesion {
 	padding: 6px 16px;
 	font-size: 0.85rem;
-	background-color: #730C02;
+	background-color: #ff69b4;
 	color: white;
 	border: none;
 	border-radius: 20px;
@@ -101,7 +101,7 @@ main {
 }
 
 footer {
-	background-color: #F21905;
+	background-color: #79184c;
 	color: white;
 	text-align: center;
 	padding: 15px 0;
@@ -195,6 +195,90 @@ footer {
 .terror-section .ver-trailer:hover {
 	background-color: #ff007f;
 }
+
+.CineAR body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #79184c; /* Rojo argentino */
+            color: white;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .movie-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .movie-card:hover {
+            transform: translateY(-5px);
+        }
+        .movie-card img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .movie-card h3 {
+            margin: 10px 0;
+            color: #2c3e50;
+        }
+        .movie-card p {
+            font-size: 0.9em;
+            color: #666;
+            padding: 0 15px 15px;
+            line-height: 1.5;
+        }
+        .movie-card a {
+            display: block;
+            background-color: #2980b9; /* Azul */
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 0 0 8px 8px;
+            transition: background-color 0.2s;
+        }
+        .movie-card a:hover {
+            background-color: #2471a3;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            color: #777;
+            font-size: 0.9em;
+            border-top: 1px solid #eee;
+ 
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
 
 /* --------------------------------------------- */
 /* 📱 Smartphones medianos (481px a 767px)       */
