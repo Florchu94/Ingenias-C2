@@ -1,4 +1,4 @@
-//* Boton Volver Arriba //
+//*** BOTON Up ***//
 
 const btnVolverArriba = document.getElementById('btnVolverArriba');
 

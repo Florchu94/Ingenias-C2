@@ -1,108 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Tkm Film</title>
+    <link
+      rel="stylesheet"
+      href="./Styles/style.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tkm Film</title>
-  <link rel="stylesheet" href="./style.css" />
-</head>
+  <body>
+    <header>
+      <nav class="nav">
+        <img
+          src="/assets/tkmfilm-logo.png"
+          alt="Logo TKM Film"
+          class="logo"
+        />
 
-<body>
-  <header>
-    <nav class="nav">
-      <img src="./assets/tkmfilm-logo.png" alt="Logo TKM Film" class="logo" />
+        <ul class="menu">
+          <li><a href="#Inicio">Inicio</a></li>
+          <li><a href="/CineAr/CineAr.html">Cine Argentino</a></li>
+          <li><a href="#Animadas">Animadas</a></li>
+          <li><a href="#Terror">Terror</a></li>
+          <li><a href="/Nosotras/Nosotras.html">Nosotras</a></li>
+        </ul>
 
-      <ul class="menu">
-        <li><a href="#Inicio">Inicio</a></li>
-        <li><a href="#Clásicos">Clásicos</a></li>
-        <li><a href="#Animadas">Animadas</a></li>
-        <li><a href="#Terror">Terror</a></li>
-        <li><a href="./Nosotras.html">Nosotras</a></li>
-      </ul>
+        <div class="container-buttons">
+          <button class="Registrarse">Registrarse</button>
+          <button class="iniciar-sesion">Iniciar Sesión</button>
+        </div>
+      </nav>
+    </header>
 
-      <div class="container-buttons">
-        <button class="Registrarse">Registrarse</button>
-        <button class="iniciar-sesion">Iniciar Sesión</button>
-      </div>
-    </nav>
-  </header>
+    <main class="main">
+      <h1>Bienvenidos a nuestra página de Películas Favoritas. 🌟</h1>
 
-  <main class="main">
-    <h1>Bienvenidos a nuestra página de Películas Favoritas. 🌟</h1>
+      <section id="descripcion">
+        <p>Acá vas a encontrar nuestras pelis preferidas,</p>
+        <p>desde clásicos que marcaron historia, hasta animaciones mágicas y terrores inolvidables.</p>
+        <p>¡Esperamos que disfrutes este recorrido cinéfilo tanto como nosotras!</p>
+      </section>
+    </main>
 
-    <section id="descripcion">
-      <p>Acá vas a encontrar nuestras pelis preferidas,</p>
-      <p>
-        desde clásicos que marcaron historia, hasta animaciones mágicas y terrores inolvidables.
-      </p>
+    <section
+      id="Animadas"
+      class="animadas-section"
+    >
+      <h2>Películas Animadas</h2>
 
-      <p>¡Esperamos que disfrutes este recorrido cinéfilo tanto como nosotras!</p>
+      <article class="pelicula-card">
+        <img
+          src="./assets/monstersinc.jpeg"
+          alt="Monsters Inc."
+          class="pelicula-imagen"
+          loading="lazy"
+        />
+        <div class="pelicula-info">
+          <h3>Monsters, Inc. (2001)</h3>
+          <p>
+            <strong>Dirección:</strong>
+            Pete Docter
+          </p>
+          <p>
+            <strong>Género:</strong>
+            Animación, Comedia, Aventura
+          </p>
+          <p class="sinopsis">
+            En Monstruópolis, la energía se genera a partir de los gritos de niños humanos. Sulley y Mike trabajan en la
+            fábrica de sustos, hasta que una pequeña niña llamada Boo se cuela en su mundo y lo cambia todo.
+          </p>
+          <a
+            href="https://www.youtube.com/watch?v=LjYBp3QJiKM"
+            target="_blank"
+            class="ver-trailer"
+            rel="noopener noreferrer"
+            aria-label="Ver tráiler de Monsters Inc. en YouTube"
+          >
+            Ver tráiler
+          </a>
+        </div>
+      </article>
     </section>
-  </main>
 
-  <section id="Animadas" class="animadas-section">
-    <h2>✨ Películas Animadas</h2>
+    <section
+      id="Terror"
+      class="terror-section"
+    >
+      <h2>👻 Películas de Terror</h2>
 
-    <article class="pelicula-card">
-      <img src="./assets/monstersinc.jpeg" alt="Monsters Inc." class="pelicula-imagen" />
-      <div class="pelicula-info">
-        <h3>Monsters, Inc. (2001)</h3>
-        <p>
-          <strong>Dirección:</strong>
-          Pete Docter
-        </p>
-        <p>
-          <strong>Género:</strong>
-          Animación, Comedia, Aventura
-        </p>
-        <p class="sinopsis">
-          En Monstruópolis, la energía se genera a partir de los gritos de niños humanos. Sulley y
-          Mike trabajan en la fábrica de sustos, hasta que una pequeña niña llamada Boo se cuela
-          en su mundo y lo cambia todo.
-        </p>
-        <a href="https://www.youtube.com/watch?v=LjYBp3QJiKM" target="_blank" class="ver-trailer">
-          Ver tráiler
-        </a>
-      </div>
-    </article>
-  </section>
+      <article class="pelicula-card">
+        <img
+          src="./assets/it.jpg"
+          alt="IT"
+          class="pelicula-imagen"
+        />
+        <div class="pelicula-info">
+          <h3>It (2017)</h3>
+          <p>
+            <strong>Dirección:</strong>
+            Andy Muschietti
+          </p>
+          <p>
+            <strong>Género:</strong>
+            Terror, Suspenso
+          </p>
+          <p class="sinopsis">
+            En el pueblo de Derry, un grupo de niños enfrenta sus peores miedos cuando un mal antiguo, disfrazado como
+            un payaso llamado Pennywise, comienza a cazarlos uno por uno.
+          </p>
+          <a
+            href="https://www.youtube.com/watch?v=_oBZ_zTz0Nw"
+            target="_blank"
+            class="ver-trailer"
+            rel="noopener noreferrer"
+            aria-label="Ver tráiler de It en YouTube"
+          >
+            Ver tráiler
+          </a>
+        </div>
+      </article>
+    </section>
 
-  <section id="Terror" class="terror-section">
-    <h2>👻 Películas de Terror</h2>
+    <button id="btnVolverArriba">
+      <img
+        src="./assets/button_up.png"
+        alt="Volver arriba"
+      />
+    </button>
 
-    <article class="pelicula-card">
-      <img src="./assets/it.jpg" alt="IT" class="pelicula-imagen" />
-      <div class="pelicula-info">
-        <h3>It (2017)</h3>
-        <p>
-          <strong>Dirección:</strong>
-          Andy Muschietti
-        </p>
-        <p>
-          <strong>Género:</strong>
-          Terror, Suspenso
-        </p>
-        <p class="sinopsis">
-          En el pueblo de Derry, un grupo de niños enfrenta sus peores miedos cuando un mal
-          antiguo, disfrazado como un payaso llamado Pennywise, comienza a cazarlos uno por uno.
-        </p>
-        <a href="https://www.youtube.com/watch?v=_oBZ_zTz0Nw" target="_blank" class="ver-trailer">
-          Ver tráiler
-        </a>
-      </div>
-    </article>
-  </section>
+    <footer class="footer">
+      <p>Hecho con 💖 por el equipo de Ingenias YPF | 2025</p>
+    </footer>
 
-  <button id="btnVolverArriba">
-    <img src="./assets/button_up.png" alt="Volver arriba" />
-  </button>
-
-  <footer class="footer">
-    <p>Hecho con 💖 por el equipo de Ingenias YPF | 2025</p>
-  </footer>
-
-  <script src="./index.js"></script>
-</body>
-
+    <script src="./index.js"></script>
+  </body>
 </html>
