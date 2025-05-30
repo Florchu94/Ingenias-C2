@@ -86,7 +86,10 @@ header {
 
 main {
   padding: 20px;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   grid-template-columns: 1fr;
   gap: 20px;
 }
@@ -324,8 +327,6 @@ footer {
   }
 
   main {
-    max-width: 1200px;
-    margin: auto;
     padding: 100px;
     text-align: center;
   }
