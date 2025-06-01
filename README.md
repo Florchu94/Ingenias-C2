@@ -45,3 +45,5 @@ cd tkm-film
 https://florchu94.github.io/Ingenias-C2/
 
 ---
+
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Florchu94/Ingenias-C2)
