@@ -8,10 +8,12 @@ html {
 
 body {
   margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   font-family: 'Poppins', sans-serif;
   background-color: #f8d7e5;
   color: #79184c;
-  display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
 }
@@ -92,6 +94,7 @@ main {
   justify-content: center;
   grid-template-columns: 1fr;
   gap: 20px;
+  flex: 1;
 }
 
 p {
@@ -156,7 +159,6 @@ footer {
 
 .pelicula-card {
   display: flex;
-  flex-direction: column;
   align-items: center;
   background-color: #fff;
   border-radius: 20px;
@@ -260,7 +262,6 @@ footer {
   main {
     padding: 40px 30px;
     text-align: left;
-    grid-template-columns: 1fr;
   }
 }
 
