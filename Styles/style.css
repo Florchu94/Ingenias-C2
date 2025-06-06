@@ -93,7 +93,6 @@ main {
   align-items: center;
   justify-content: center;
   grid-template-columns: 1fr;
-  gap: 20px;
   flex: 1;
 }
 
@@ -110,12 +109,44 @@ footer {
   width: 100%;
 }
 
+/*** Sección CINE AR ***/
+
+.cinear-section {
+  padding: 2rem 1rem;
+  background-color: #ffbed4;
+  text-align: center;
+}
+
+.cinear-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgb(0 255 241 / 43%);
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 800px;
+  text-wrap: balance;
+}
+
 /*** Sección ANIMADAS ***/
 
 .animadas-section {
   padding: 2rem 1rem;
   background-color: #ffbed4;
   text-align: center;
+}
+
+.animadas-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgb(0 255 241 / 43%);
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 800px;
+  text-wrap: balance;
 }
 
 .animadas-section h2 {
@@ -166,6 +197,7 @@ footer {
   padding: 1.5rem;
   margin: 1rem auto;
   max-width: 800px;
+  text-wrap: balance;
 }
 
 .terror-section .pelicula-card {
