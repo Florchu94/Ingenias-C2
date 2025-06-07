@@ -323,6 +323,13 @@ footer {
     gap: 10px;
   }
 
+  p {
+    padding: 0lh;
+  }
+  .sinopsis {
+    padding: 10px;
+  }
+
   .cinear-card {
     flex-wrap: wrap;
     flex-direction: column;
@@ -336,12 +343,5 @@ footer {
   .terror-card {
     flex-wrap: wrap;
     flex-direction: column;
-  }
-
-  p {
-    padding: 0lh;
-  }
-  .sinopsis {
-    padding: 10px;
   }
 }
