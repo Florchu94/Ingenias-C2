@@ -192,7 +192,7 @@ footer {
   margin-bottom: 2rem;
 }
 
-.pelicula-card {
+.terror-card {
   display: flex;
   align-items: center;
   background-color: #fff;
@@ -204,7 +204,7 @@ footer {
   text-wrap: balance;
 }
 
-.terror-section .pelicula-card {
+.terror-section .terror-card {
   background-color: #2c2531;
   box-shadow: 0 4px 10px rgba(255, 105, 180, 0.2);
 }
@@ -323,15 +323,25 @@ footer {
     gap: 10px;
   }
 
-  .cinear-card {
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-
   p {
     padding: 0lh;
   }
   .sinopsis {
     padding: 10px;
+  }
+
+  .cinear-card {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .animadas-card {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .terror-card {
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
