@@ -1,6 +1,6 @@
-/** -------------------------------------  */
-/**    BASE MOBILE FIRST (hasta 480px)    */
 /** ------------------------------------ */
+/**           ESTILOS BASE WEB         */
+/** ----------------------------------*/
 
 html {
   scroll-behavior: smooth;
@@ -26,15 +26,16 @@ header {
 }
 
 .logo {
-  height: 100px;
+  height: 130px;
   width: auto;
 }
 
 .nav {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  padding: 0 60px;
 }
 
 .menu {
@@ -42,9 +43,9 @@ header {
   padding: 0;
   margin: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
+  flex-direction: row;
+  margin-left: 40px;
+  gap: 30px;
 }
 
 .menu li a {
@@ -87,18 +88,17 @@ header {
 }
 
 main {
-  padding: 20px;
+  padding: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  grid-template-columns: 1fr;
-  gap: 20px;
+  font-size-adjust: 0.5;
+  text-align: center;
   flex: 1;
 }
 
 p {
-  padding: 1em;
   padding: 1lh;
 }
 
@@ -110,12 +110,44 @@ footer {
   width: 100%;
 }
 
+/*** Sección CINE AR ***/
+
+.cinear-section {
+  padding: 2rem 1rem;
+  background-color: #ffbed4;
+  text-align: center;
+}
+
+.cinear-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgb(0 255 241 / 43%);
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 800px;
+  text-wrap: balance;
+}
+
 /*** Sección ANIMADAS ***/
 
 .animadas-section {
   padding: 2rem 1rem;
   background-color: #ffbed4;
   text-align: center;
+}
+
+.animadas-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgb(0 255 241 / 43%);
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 800px;
+  text-wrap: balance;
 }
 
 .animadas-section h2 {
@@ -166,6 +198,7 @@ footer {
   padding: 1.5rem;
   margin: 1rem auto;
   max-width: 800px;
+  text-wrap: balance;
 }
 
 .terror-section .pelicula-card {
@@ -223,26 +256,35 @@ footer {
   transform: scale(1.1);
 }
 
-/** ---------------------------------------------  */
-/**      SMARTPHONES medianos (481px a 767px)     */
-/** -------------------------------------------- */
+/** ----------------------------------  */
+/**       TABLETS (hasta 1024px)       */
+/** ----------------------------------*/
 
-@media (min-width: 481px) and (max-width: 767px) {
-  .menu {
-    gap: 15px;
+@media (max-width: 1024px) {
+  .nav {
+    padding: 0 40px;
+    justify-content: center;
   }
 
-  .container-buttons {
-    flex-direction: row;
-    gap: 15px;
+  .menu {
+    gap: 25px;
+    margin-left: 30px;
+  }
+
+  .logo {
+    height: 120px;
+  }
+
+  main {
+    padding: 80px;
   }
 }
 
-/**  ------------------------------------- */
-/**     TABLETS (768px a 1024px)          */
-/** ------------------------------------ */
+/** --------------------------------------------  */
+/**    SMARTPHONES medianos (hasta 767px)        */
+/** --------------------------------------------*/
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 767px) {
   .nav {
     flex-direction: row;
     justify-content: center;
@@ -263,60 +305,42 @@ footer {
     padding: 40px 30px;
     text-align: left;
   }
-}
 
-/** ---------------------------------------------------- */
-/**    LAPTOPS / DESKTOP medianos (1025px a 1280px)     */
-/** -------------------------------------------------- */
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  .nav {
+  .container-buttons {
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0 40px;
-  }
-
-  .menu {
-    flex-direction: row;
-    margin-left: 30px;
-    gap: 25px;
-  }
-
-  .logo {
-    height: 120px;
-  }
-
-  main {
-    padding: 80px;
-    text-align: center;
+    gap: 15px;
   }
 }
 
-/** ----------------------------------------- */
-/**   DESKTOP grandes (1281px en adelante)   */
-/** --------------------------------------- */
+/** ------------------------------------------  */
+/**      MOBILE BASE (hasta 480px)             */
+/** ------------------------------------------*/
 
-@media (min-width: 1281px) {
+@media (max-width: 480px) {
   .nav {
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 0 60px;
+    padding: 0;
   }
 
   .menu {
-    flex-direction: row;
-    margin-left: 40px;
-    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-left: 0;
   }
 
   .logo {
-    height: 130px;
+    height: 100px;
   }
 
   main {
-    padding: 100px;
+    padding: 20px;
     text-align: center;
+  }
+
+  .container-buttons {
+    flex-direction: column;
+    gap: 10px;
   }
 }
