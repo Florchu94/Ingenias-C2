@@ -291,7 +291,9 @@ footer {
     padding: 80px;
   }
 
-  .cinear-section {
+  .cinear-section,
+  .animadas-section,
+  .terror-section {
     padding: 3rem;
   }
 }
@@ -323,13 +325,6 @@ footer {
     gap: 10px;
   }
 
-  p {
-    padding: 0lh;
-  }
-  .sinopsis {
-    padding: 10px;
-  }
-
   .cinear-card {
     flex-wrap: wrap;
     flex-direction: column;
@@ -343,5 +338,12 @@ footer {
   .terror-card {
     flex-wrap: wrap;
     flex-direction: column;
+  }
+
+  p {
+    padding: 0lh;
+  }
+  .sinopsis {
+    padding: 10px;
   }
 }
