@@ -1,5 +1,4 @@
 {
   "liveServer.settings.port": 5501,
-  "liveServer.settings.root": "/",
-  "liveServer.settings.file": "public/index.html"
+  "liveServer.settings.root": "/docs"
 }
