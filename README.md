@@ -25,4 +25,5 @@ cd tkm-film
 ## O visitá la versión publicada online:
 
 [![Deploy en Vercel](https://img.shields.io/badge/Vercel-Online%20🔗-black?logo=vercel&logoColor=white)](https://ingenias-c2.vercel.app/)
+
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Florchu94/Ingenias-C2)
