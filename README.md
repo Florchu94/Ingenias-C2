@@ -42,7 +42,7 @@ cd tkm-film
 
 ---
 
-https://florchu94.github.io/Ingenias-C2/
+(https://ingenias-c2.vercel.app/)
 
 ---
 
