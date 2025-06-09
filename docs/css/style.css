@@ -259,6 +259,11 @@ footer {
   transform: scale(1.1);
 }
 
+#scroll-sentinel {
+  height: 1px;
+  width: 100%;
+}
+
 /** ----------------------------------  */
 /**       TABLETS (hasta 1024px)       */
 /** ----------------------------------*/

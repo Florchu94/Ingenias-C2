@@ -1,14 +1,20 @@
-//*** BOTON Up ***//
+//*** BOTON Scroll Up ***//
 
 const btnVolverArriba = document.getElementById('btnVolverArriba');
+const sentinel = document.getElementById('scroll-sentinel');
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 300) {
+function mostrarOcultarBoton() {
+  const sentinelPosition = sentinel.getBoundingClientRect().top;
+
+  if (sentinelPosition < -50) {
     btnVolverArriba.style.display = 'block';
   } else {
     btnVolverArriba.style.display = 'none';
   }
-});
+}
+
+window.addEventListener('scroll', mostrarOcultarBoton);
+window.addEventListener('DOMContentLoaded', mostrarOcultarBoton);
 
 btnVolverArriba.addEventListener('click', () => {
   window.scrollTo({
