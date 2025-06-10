@@ -236,6 +236,7 @@ footer {
 /*** BOTON Up ***/
 
 #btnVolverArriba {
+  display: none;
   position: fixed;
   bottom: 15px;
   right: 15px;
@@ -257,11 +258,6 @@ footer {
 #btnVolverArriba:hover {
   background-color: #ff1493;
   transform: scale(1.1);
-}
-
-#scroll-sentinel {
-  height: 1px;
-  width: 100%;
 }
 
 /** ----------------------------------  */
