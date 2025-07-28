@@ -1,27 +1,26 @@
 //*** RENDER ***/
 
 function renderPeliculas(peliculas) {
-  const contenedor = document.querySelector('.Container-Cards');
-  contenedor.innerHTML = ''; // Limpiar resultados anteriores
+  const contenedor = document.getElementById('contenedor-peliculas');
+  contenedor.innerHTML = '';
 
   if (peliculas.length === 0) {
-    contenedor.innerHTML = '<p>No se encontraron películas.</p>';
+    contenedor.innerHTML = '<p>No se encontraron resultados.</p>';
     return;
   }
 
-  peliculas.forEach(pelicula => {
+  peliculas.forEach(peli => {
     const card = document.createElement('div');
-    card.classList.add('card');
-
-    const titulo = pelicula.title || 'Sin título';
-    const imagen = pelicula.poster_path ? `https://image.tmdb.org/t/p/w500${pelicula.poster_path}` : 'ruta/a/imagen-default.jpg';
-    const resumen = pelicula.overview || 'Sin descripción.';
+    card.classList.add('animadas-card');
 
     card.innerHTML = `
-      <img src="${imagen}" alt="${titulo}" class="pelicula-imagen">
+      <img class="pelicula-imagen" src="https://image.tmdb.org/t/p/w500${peli.poster_path}" alt="${peli.title}">
       <div class="pelicula-info">
-        <h3>${titulo}</h3>
-        <p class="sinopsis">${resumen}</p>
+        <h3>${peli.title}</h3>
+        <p class="sinopsis">${peli.overview}</p>
+        <a class="ver-trailer" href="https://www.youtube.com/results?search_query=${encodeURIComponent(
+          peli.title + ' trailer'
+        )}" target="_blank">Ver tráiler</a>
       </div>
     `;
 
