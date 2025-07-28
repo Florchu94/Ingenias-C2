@@ -142,6 +142,29 @@ footer {
   border-radius: 10px;
 }
 
+/*** CARDS API***/
+
+.Container-Cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 250px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
 /*** Sección CINE AR ***/
 
 .cinear-section {
