@@ -19,7 +19,7 @@ body {
 }
 
 header {
-  background-color: #79184c;
+  background-color: #3b1f2b ;
   color: white;
   text-align: center;
 }
@@ -70,12 +70,12 @@ header {
 .busqueda-nav input {
   padding: 6px 12px;
   border-radius: 20px;
-  border: 1px solid #ff69b4;
+  border: 1px solid #3b1f2b;
   font-size: 0.9rem;
 }
 
 .busqueda-nav button {
-  background-color: #ff69b4;
+  background-color: #3b1f2b;
   color: white;
   border: none;
   border-radius: 20px;
@@ -86,7 +86,7 @@ header {
 }
 
 .busqueda-nav button:hover {
-  background-color: #ff1493;
+  background-color: #3b1f2b;
 }
 
 .container-buttons {
@@ -99,7 +99,7 @@ header {
 .iniciar-sesion {
   padding: 6px 16px;
   font-size: 0.85rem;
-  background-color: #ff69b4;
+  background-color: #3b1f2b;
   color: white;
   border: none;
   border-radius: 20px;
@@ -110,7 +110,7 @@ header {
 
 .Registrarse:hover,
 .iniciar-sesion:hover {
-  background-color: #ff1493;
+  background-color: #3b1f2b;
 }
 
 main {
@@ -129,7 +129,7 @@ p {
 }
 
 footer {
-  background-color: #79184c;
+  background-color:#3b1f2b;
   color: white;
   text-align: center;
   padding: 15px 0;
@@ -376,4 +376,42 @@ footer {
   .sinopsis {
     padding: 10px;
   }
+}
+/** --------------------------------------------  */
+/**            SECCION NOSOTRAS                  */
+/** --------------------------------------------*/
+
+#descripcion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+  gap: 40px;
+  background-color: #fdf6f0;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap; /* Para que en móviles se adapte */
+}
+
+.imagen-nosotras img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+}
+
+.texto-nosotras {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px; 
+}
+
+.texto-nosotras p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 6px;
+  line-height: 1.3; 
+
 }
