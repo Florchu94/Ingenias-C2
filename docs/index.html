@@ -7,47 +7,95 @@
         content="width=device-width, initial-scale=1.0" />
   <title>Tkm Film</title>
   <link rel="stylesheet"
-        href="./css/style.css" />
+        href="./css/index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
 <body>
   <header>
-    <nav class="nav">
-      <img src="/images/tkmfilm-logo.png"
-           alt="Logo TKM Film"
-           class="logo" />
-
-      <ul class="menu">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="pages/CineAr.html">CineAr</a></li>
-        <li><a href="pages/Animadas.html">Animadas</a></li>
-        <li><a href="pages/Terror.html">Terror</a></li>
-        <li><a href="pages/Nosotras.html">Nosotras</a></li>
-      </ul>
-
-      <div class="container-buttons">
-        <button class="Registrarse">Registrarse</button>
-        <button class="iniciar-sesion">Iniciar Sesión</button>
-      </div>
-    </nav>
+    <div class="contenedor">
+      <img class="logo"
+           src="/images/tkmfilm-logo.png"
+           alt="Logo TKM Film" />
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="pages/CineAr.html">CineAr</a>
+        <a href="pages/Animadas.html">Animadas</a>
+        <a href="pages/Terror.html">Terror</a>
+        <a href="pages/Nosotras.html">Nosotras</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="main">
-    <h1>Bienvenidos</h1>
+  <main>
+    <div class="pelicula-principal">
+      <div class="contenedor">
+        <h3 class="titulo">It</h3>
+        <p class="descripcion">
+          En el pueblo de Derry, un grupo de niños enfrenta sus peores miedos cuando un mal antiguo, disfrazado como un
+          payaso llamado Pennywise, comienza a cazarlos uno por uno.
+        </p>
+        <button role="button"
+                class="boton"><i class="fas fa-play"></i>Reproducir</button>
+        <button role="button"
+                class="boton"><i class="fas fa-info-circle"></i>Más información</button>
+      </div>
+    </div>
+    <div class="Peliculas-Recomendadas contenedor">
+      <div class="contenedor-titulo-controles">
+        <h3>Películas-Recomendadas</h3>
+        <div class="indicadores"></div>
+      </div>
+      <div class="contenedor-principal">
+        <button role="button"
+                id="flecha-izquierda"
+                class="flecha-izquierda"><i class="fa-solid fa-angle-left"></i></button>
 
-    <section id="descripcion">
-      <p>Acá vas a encontrar nuestras pelis preferidas,</p>
-      <p>desde clásicos que marcaron historia, hasta animaciones mágicas y terrores inolvidables.</p>
-      <p>¡Esperamos que disfrutes este recorrido cinéfilo tanto como nosotras!</p>
-    </section>
+        <div class="contenedor-carrusel">
+          <div class="carrusel">
+            <div class="pelicula">
+              <a href="#"><img src="./assets/img/Animadas/monstersinc.jpeg"
+                     alt=""></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="../docs/assets/img/CineAr/"
+                     alt=""></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="../docs/assets/img/CineAr/"
+                     alt=""></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="../docs/assets/img/CineAr/"
+                     alt=""></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="../docs/assets/img/CineAr/"
+                     alt=""></a>
+            </div>
+          </div>
+        </div>
+
+        <button role="button"
+                id="flecha-derecha"
+                class="flecha-derecha"><i class="fa-solid fa-angle-right"></i></button>
+      </div>
+
+    </div>
   </main>
 
   <footer class="footer">
     <p>Hecho con 💖 por el equipo de Ingenias YPF | 2025</p>
   </footer>
 
+  <script src="https://fontawesome.com/icons/chevron-left?f=classic&s=solid"
+          crossorigin="anonymous"></script>
   <script src="../scripts/tempData.js"></script>
   <script src="../scripts/funciones.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
