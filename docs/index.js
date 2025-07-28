@@ -7,25 +7,37 @@ async function buscarPelicula() {
   const query = document.getElementById('busquedaInput').value.trim();
   if (!query) return;
 
-  const response = await fetch(
-    `https://api.themoviedb.org/3/search/movie?query=${encodeURIComponent(query)}&language=es-ES&page=1`,
-    {
-      method: 'GET',
-      headers: {
-        accept: 'application/json',
-        Authorization: token,
-      },
-    }
-  );
+  const contenedor = document.querySelector('.Container-Cards');
+  contenedor.innerHTML = '<p>🔎 Buscando películas...</p>';
 
-  const data = await response.json();
-  renderPeliculas(data.results);
+  try {
+    const response = await fetch(
+      `https://api.themoviedb.org/3/search/movie?query=${encodeURIComponent(query)}&language=es-ES&page=1`,
+      {
+        method: 'GET',
+        headers: {
+          accept: 'application/json',
+          Authorization: token,
+        },
+      }
+    );
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const data = await response.json();
+    renderPeliculas(data.results);
+  } catch (error) {
+    console.error('Error al buscar películas:', error);
+    contenedor.innerHTML = '<p>⚠️ Ocurrió un error al buscar películas. Intentalo nuevamente.</p>';
+  }
 }
 
 // Llama a la función al hacer clic
 document.getElementById('btnBuscar').addEventListener('click', buscarPelicula);
 
-// O cuando presionás Enter
+// O cuando se presiona Enter
 document.getElementById('busquedaInput').addEventListener('keypress', e => {
   if (e.key === 'Enter') buscarPelicula();
 });
