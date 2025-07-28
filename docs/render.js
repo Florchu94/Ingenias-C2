@@ -10,8 +10,8 @@ function renderPeliculas(peliculas) {
   }
 
   peliculas.forEach(peli => {
-    const card = document.createElement('div');
-    card.classList.add('pelicula-card');
+    const card = document.createElement('article');
+    card.classList.add('animadas-card');
 
     // Imagen de respaldo si no hay poster
     const poster = peli.poster_path
@@ -29,10 +29,16 @@ function renderPeliculas(peliculas) {
       <img class="pelicula-imagen" src="${poster}" alt="${peli.title}">
       <div class="pelicula-info">
         <h3>${peli.title}</h3>
+        <p><strong>Idioma original:</strong> ${peli.original_language.toUpperCase()}</p>
+        <p><strong>Fecha de estreno:</strong> ${peli.release_date || 'Sin información'}</p>
         <p class="sinopsis">${resumen}</p>
-        <a class="ver-trailer" href="https://www.youtube.com/results?search_query=${encodeURIComponent(
-          peli.title + ' trailer'
-        )}" target="_blank">🎬 Ver tráiler</a>
+        <a class="ver-trailer" 
+           href="https://www.youtube.com/results?search_query=${encodeURIComponent(peli.title + ' trailer')}" 
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Ver tráiler de ${peli.title} en YouTube">
+          Ver tráiler
+        </a>
       </div>
     `;
 
